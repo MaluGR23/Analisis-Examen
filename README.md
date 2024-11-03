@@ -4,3 +4,5 @@
 #informar que el articulo no se encuentra
 #Se agrega la funcionalidad de filtrar articulos pendientes mediante la creacion de una variable de tipo boolean para establecer si el
 #producto ya fue comprado o no.
+
+#Se agrega la funcionalidad de eliminar entradas existentes en el diario  en funcion de la fecha, recorriendo el diario comparando las fechas de las entradas, hasta encontrar la que se desea eliminar. Si no se encuentra, se informa que la entrada no existe.
