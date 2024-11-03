@@ -10,6 +10,10 @@ class informacionDiario {
         this.contenido = contenido;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
+
     @Override
     public String toString() {
         return fecha + ": " + contenido;
@@ -31,9 +35,20 @@ class diarioPersonal {
             System.out.println("- " + entrada);
         }
     }
+    
+    public void eliminarEntrada(String fecha) {
+        for (informacionDiario entrada : diario) {
+            if (entrada.getFecha().equals(fecha)) {
+                diario.remove(entrada);
+                System.out.println("Entrada eliminada: " + entrada);
+                return;
+            }
+        }
+        System.out.println("Entrada no encontrada");
+    }
 }
 
-public class MainDiario {
+public class diario {
     public static void main(String[] args) {
         diarioPersonal diario = new diarioPersonal();
         diario.agregarEntrada("2024-10-31", "Hoy fue un buen dia.");
