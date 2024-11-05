@@ -10,6 +10,14 @@ class informacionDiario {
         this.contenido = contenido;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
+
     @Override
     public String toString() {
         return fecha + ": " + contenido;
@@ -33,6 +41,17 @@ class diarioPersonal {
     }
     public int mostrarUltimasEntradas() {
     	return diario.size();
+    }
+
+    public void editarEntrada(String fecha, String nuevoContenido) {
+        for (informacionDiario entrada : diario) {
+            if (entrada.getFecha().equals(fecha)) {
+                entrada.setContenido(nuevoContenido);
+                System.out.println("Entrada editada: " + entrada);
+                return;
+            }
+        }
+        System.out.println("No se encontró una entrada con la fecha " + fecha);
     }
 }
 
