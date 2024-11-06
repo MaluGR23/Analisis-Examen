@@ -147,6 +147,12 @@ class listaCompras {
             System.out.println(articulo.getNombre() + " - Cantidad: " + articulo.getCantidad());
         }
     }
+
+    // Cesar Prada
+    public void limpiarLista() {
+        listaArticulos.clear();
+        System.out.println("La lista ha sido vaciada.");
+    }
 }
 
 public class Main {
