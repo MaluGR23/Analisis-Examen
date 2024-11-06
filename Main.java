@@ -173,6 +173,12 @@ class listaCompras {
     }
 }
 
+    // Cesar Prada
+    public void limpiarLista() {
+        listaArticulos.clear();
+        System.out.println("La lista ha sido vaciada.");
+    }
+
 }
 
 public class Main {
