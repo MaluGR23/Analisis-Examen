@@ -116,7 +116,11 @@ class listaCompras {
 
         return articulosComprados;
     }
-
+    //Cesar
+    public void limpiarLista() {
+        listaArticulos.clear();
+        System.out.println("La lista ha sido vaciada.");
+    }
 
 }
 
