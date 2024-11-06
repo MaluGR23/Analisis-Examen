@@ -8,7 +8,7 @@
 #se agrego la funcion de marcar un articulo de la lista como comprado
 #se agrego la funcion de contar entradas y mostrar el total de entradas
 #se agrego funcion de limpiar lista de articulos
-
+#Se creo la función contarArticulos dentro de la clase listaCompras
 
 
 
