@@ -73,7 +73,9 @@ class listaCompras {
         }
 	}
 
-    
+    public void eliminarArticulo(String nombre) {
+        
+    }
 
     public void mostrarLista() {
 
