@@ -55,3 +55,28 @@ public class MainDiario {
         diario.mostrarDiario();
     }
 }
+
+public class Entrada{
+    private String contenido;
+
+    public Entrada(String contenido) {
+        this.contenido = contenido;
+    }
+
+    public String getContenido() {
+        return contenido;
+    }
+
+    public int contarEntradas() {
+        return entradas.size();
+    }
+    public void mostrarTotalEntradas() {
+        System.out.println("Total de entradas en el diario: " + contarEntradas());
+    }
+
+    public void mostrarEntradas() {
+        for (Entrada entrada : entradas) {
+            System.out.println( "Contenido: " + entrada.getContenido());
+        }
+    }
+}

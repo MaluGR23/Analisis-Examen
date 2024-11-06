@@ -5,3 +5,10 @@
 #Se agrega la funcionalidad de filtrar articulos pendientes mediante la creacion de una variable de tipo boolean para establecer si el
 #producto ya fue comprado o no.
 #04/11/2024 guillermo silva , se agrega la funcionalidad de filtrar entradas por palabras clave , retornando una lista de las coincidencias encontradas
+#se agrego la funcion de marcar un articulo de la lista como comprado
+#se agrego la funcion de contar entradas y mostrar el total de entradas
+#se agrego funcion de limpiar lista de articulos
+
+
+
+
