@@ -73,6 +73,11 @@ class listaCompras {
         }
 	}
 
+    //Karina
+    public void eliminarArticulo(String nombre) {
+       
+    }
+
     public void mostrarLista() {
 
         System.out.println("Lista de Compras:");
