@@ -147,6 +147,22 @@ class listaCompras {
             System.out.println(articulo.getNombre() + " - Cantidad: " + articulo.getCantidad());
         }
     }
+
+    public static void guardarListaEnArchivo(String[] lista, String nombreArchivo) {
+        try {
+            FileWriter writer = new FileWriter(nombreArchivo);
+            for (String item : lista) {
+                writer.write(item + "\n");
+            }
+            writer.close();
+            System.out.println("Lista guardada exitosamente en '" + nombreArchivo + "'.");
+        } catch (IOException e) {
+            System.out.println("Ocurrió un error al guardar la lista.");
+            e.printStackTrace();
+        }
+    }
+}
+
 }
 
 public class Main {
