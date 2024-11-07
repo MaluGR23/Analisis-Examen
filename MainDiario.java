@@ -14,6 +14,10 @@ class informacionDiario {
     public String toString() {
         return fecha + ": " + contenido;
     }
+
+    public String getFecha() {
+        return fecha;
+    }
 }
 
 class diarioPersonal {
@@ -49,6 +53,14 @@ class diarioPersonal {
     public void limpiarDiario() {
         diario.clear();
         System.out.println("Diario limpiado.");
+    }
+
+    public informacionDiario buscarEntradaFecha(String fecha) {
+        for (informacionDiario info : diario) {
+            if (info.getFecha().equals(fecha))
+                return info;
+        }
+        return null;
     }
 }
 
