@@ -35,6 +35,10 @@ class Articulo {
 class listaCompras {
     private List<Articulo> listaCompras = new ArrayList<>();
 
+    public void contarArticulos(){
+        System.out.println("Cantidad total de artículos en la lista: " + listaCompras.size());
+    }
+
     public void agregarArticulo(String nombre, int cantidad) {
         Articulo nuevoArticulo = new Articulo(nombre, cantidad);
         listaCompras.add(nuevoArticulo);
@@ -187,5 +191,6 @@ public class Main {
         lista.agregarArticulo("Manzanas", 4);
         lista.agregarArticulo("Pan", 1);
         lista.mostrarLista();
+        lista.contarArticulos();
     }
 }
