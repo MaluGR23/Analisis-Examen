@@ -31,21 +31,26 @@ class diarioPersonal {
             System.out.println("- " + entrada);
         }
     }
+
     public int mostrarUltimasEntradas() {
-    	return diario.size();
+        return diario.size();
     }
 
-    public List<informacionDiario> FiltrarEntradasPorPlabrasClave (String palabraClave){
-        List<informacionDiario> palabrasClave = new List<>(); 
-        for (informacionDiario info : diario ){
-            String [] array = info.toString().split(": ");   
-            if ( array[1].contains(palabraClave))               
+    public List<informacionDiario> FiltrarEntradasPorPlabrasClave(String palabraClave) {
+        List<informacionDiario> palabrasClave = new List<>();
+        for (informacionDiario info : diario) {
+            String[] array = info.toString().split(": ");
+            if (array[1].contains(palabraClave))
                 palabrasClave.add(info);
         }
         return palabrasClave;
     }
-}
 
+    public void limpiarDiario() {
+        diario.clear();
+        System.out.println("Diario limpiado.");
+    }
+}
 
 public class MainDiario {
     public static void main(String[] args) {
@@ -56,7 +61,7 @@ public class MainDiario {
     }
 }
 
-public class Entrada{
+public class Entrada {
     private String contenido;
 
     public Entrada(String contenido) {
@@ -70,13 +75,14 @@ public class Entrada{
     public int contarEntradas() {
         return entradas.size();
     }
+
     public void mostrarTotalEntradas() {
         System.out.println("Total de entradas en el diario: " + contarEntradas());
     }
 
     public void mostrarEntradas() {
         for (Entrada entrada : entradas) {
-            System.out.println( "Contenido: " + entrada.getContenido());
+            System.out.println("Contenido: " + entrada.getContenido());
         }
     }
 }
