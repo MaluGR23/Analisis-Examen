@@ -8,6 +8,7 @@
 #se agrego la funcion de marcar un articulo de la lista como comprado
 #se agrego la funcion de contar entradas y mostrar el total de entradas
 #se agrego funcion de limpiar lista de articulos
+#se agrego la funcion de listar entradas y se verifica si esta vacia 
 #Se creo la función contarArticulos dentro de la clase listaCompras
 #Creación del método limpiarDiario() que borra las entradas del diario
 #Agrego método buscar entrada fecha y get fecha para obtener el valor de la fecha en cada entrada y poder buscar en la lista

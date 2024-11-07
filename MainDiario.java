@@ -30,6 +30,9 @@ class diarioPersonal {
     }
 
     public void mostrarDiario() {
+        if (diario.isEmpty()) { //si el diario no tiene entradas
+            System.out.println("El diario está vacío. No hay entradas para mostrar.");
+        }
         System.out.println("Entradas del Diario:");
         for (informacionDiario entrada : diario) {
             System.out.println("- " + entrada);
