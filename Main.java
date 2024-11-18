@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.io.*;
 
 class Articulo {
     private String nombre;
@@ -181,6 +182,18 @@ class listaCompras {
     public void limpiarLista() {
         listaArticulos.clear();
         System.out.println("La lista ha sido vaciada.");
+    }
+    // ivan peñaranda
+      public void agregarDesdeArchivo(List<String> lista, String nombreArchivo) {
+        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                lista.add(linea); 
+            }
+            System.out.println("Elementos agregados desde el archivo.");
+        } catch (IOException e) {
+            System.out.println("Error al cargar el archivo: " + e.getMessage());
+        }
     }
 
 }
